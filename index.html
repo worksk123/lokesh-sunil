@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sunil Trader | Trading Education</title>
+<meta name="description" content="Sunil Trader — आसान भाषा में Trading Education, Market Analysis और Learning Community.">
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2966106237059029');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2966106237059029&ev=PageView&noscript=1"></noscript>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+ --bg:#f6f8f5;--card:#fff;--ink:#101713;--muted:#66716a;
+ --line:#e3e9e4;--green:#16834a;--green2:#0d6338;--soft:#eaf6ee;
+ --dark:#13231a;--gold:#c89432;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+background:radial-gradient(circle at 90% 0,#e9f6ee 0,transparent 28%),var(--bg);
+color:var(--ink);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1080px,calc(100% - 28px));margin:auto}
+header{padding:16px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{width:43px;height:43px;border-radius:13px;object-fit:cover;background:#dfe9e2}
+.brand strong{display:block;font-size:15px;letter-spacing:-.3px}
+.brand span{display:block;font-size:9px;color:var(--muted);font-weight:700;letter-spacing:.6px}
+.navbtn{padding:9px 13px;border:1px solid var(--line);background:#fff;border-radius:999px;
+font-size:11px;font-weight:800;color:var(--green2);white-space:nowrap}
+
+.hero{padding:30px 0 42px}
+.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:44px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid #dfe8e1;
+padding:7px 11px;border-radius:99px;color:var(--green2);font-size:11px;font-weight:800;margin-bottom:16px}
+.pulse{width:7px;height:7px;background:#1aa05a;border-radius:50%;box-shadow:0 0 0 5px #e4f5ea}
+h1{font-size:clamp(42px,6vw,68px);line-height:.98;letter-spacing:-3px;max-width:650px}
+h1 em{font-style:normal;color:var(--green)}
+.heroText{font-size:16px;color:var(--muted);line-height:1.75;max-width:590px;margin:20px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tag{background:#fff;border:1px solid var(--line);border-radius:9px;padding:8px 10px;font-size:11px;font-weight:700;color:#47534c}
+.cta{border:0;cursor:pointer;width:100%;max-width:390px;min-height:54px;border-radius:14px;
+background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;font-size:15px;font-weight:850;
+display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:0 14px 30px #16834a2e;transition:.2s}
+.cta:hover{transform:translateY(-2px)}
+.tg{width:24px;height:24px;border-radius:50%;background:#ffffff25;display:grid;place-items:center}
+.note{text-align:center;max-width:390px;color:#8a958e;font-size:10px;margin-top:9px}
+
+.profile{background:#fff;border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:0 22px 60px #15231a12;position:relative;overflow:hidden}
+.profile:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-100px;top:-110px;background:#e9f7ee}
+.profileTop{display:flex;align-items:center;gap:13px;position:relative;z-index:1}
+.avatar{width:68px;height:68px;border-radius:20px;object-fit:cover;background:#dfe9e2;border:3px solid #fff;box-shadow:0 7px 20px #00000010}
+.name{font-size:19px;font-weight:850}.verified{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:50%;
+background:#198fe0;color:#fff;font-size:9px;vertical-align:2px}.role{font-size:11px;color:var(--muted);margin-top:3px}
+.chart{height:170px;margin:20px 0 16px;border:1px solid #e6ede8;border-radius:17px;overflow:hidden;position:relative;
+background:linear-gradient(#16834a0b 1px,transparent 1px),linear-gradient(90deg,#16834a0b 1px,transparent 1px),#fbfdfb;background-size:34px 34px}
+.chart label{position:absolute;left:12px;top:10px;font-size:9px;color:#8b978f;font-weight:800}
+.chart svg{width:100%;height:100%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);padding-top:15px;text-align:center}
+.stats b{display:block;font-size:16px}.stats span{font-size:9px;color:#89938d}
+
+.section{padding:48px 0}.head{text-align:center;max-width:650px;margin:0 auto 25px}
+.head h2{font-size:clamp(27px,4vw,39px);letter-spacing:-1.4px}.head p{color:var(--muted);font-size:13px;margin-top:8px;line-height:1.65}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:21px;box-shadow:0 9px 30px #15231a07}
+.icon{width:40px;height:40px;display:grid;place-items:center;background:var(--soft);border-radius:12px;color:var(--green2);font-weight:900;margin-bottom:15px}
+.card h3{font-size:15px;margin-bottom:7px}.card p{font-size:12px;color:var(--muted);line-height:1.7}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.step{display:flex;gap:12px;background:#fff;border:1px solid var(--line);padding:18px;border-radius:16px}
+.num{flex:none;width:31px;height:31px;border-radius:10px;background:var(--dark);color:#fff;display:grid;place-items:center;font-size:11px;font-weight:800}
+.step h3{font-size:14px}.step p{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.55}
+
+.join{background:linear-gradient(135deg,#122219,#1c3a28);color:#fff;border-radius:25px;padding:40px 24px;text-align:center;position:relative;overflow:hidden}
+.join h2{font-size:clamp(28px,4vw,42px);letter-spacing:-1.5px}.join p{color:#ffffffa8;font-size:13px;max-width:570px;margin:9px auto 21px;line-height:1.65}
+.join .cta{margin:auto;background:#fff;color:var(--green2);box-shadow:none}
+.disclaimer{text-align:center;max-width:760px;margin:23px auto 0;color:#89938d;font-size:9px;line-height:1.7}
+footer{text-align:center;padding:28px 0 92px;color:#929b95;font-size:9px}
+
+.sticky{display:none}
+
+@media(max-width:800px){
+ .wrap{width:calc(100% - 22px)}
+ .hero{padding-top:18px}.heroGrid{grid-template-columns:1fr;gap:25px}
+ h1{letter-spacing:-2px;font-size:clamp(40px,12vw,55px)}
+ .heroText{font-size:14px}.profile{max-width:560px;margin:auto}
+ .grid,.steps{grid-template-columns:1fr}
+ .section{padding:35px 0}
+ .head{margin-bottom:20px}.head h2{font-size:28px}
+ .sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+ background:#ffffffef;border-top:1px solid var(--line);backdrop-filter:blur(12px)}
+ .sticky .cta{max-width:520px;margin:auto;min-height:49px}
+ footer{padding-bottom:100px}
+}
+@media(max-width:380px){
+ .brand strong{font-size:13px}.brand span{font-size:8px}.navbtn{font-size:9px;padding:8px 10px}
+ h1{font-size:40px}.profile{padding:15px}.chart{height:140px}.cta{font-size:13px}
+}
+</style>
+</head>
+
+<body>
+<header>
+ <div class="wrap nav">
+  <div class="brand">
+   <!-- Deployment ke time apni profile photo is naam se upload karein -->
+   <img src="profile.jpeg" alt="Sunil Trader">
+   <div><strong>Sunil Trader</strong><span>TRADING EDUCATION</span></div>
+  </div>
+  <a class="navbtn tgLink" href="https://t.me/+c14Nqfq5dKk5MTg1">Telegram ↗</a>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="wrap heroGrid">
+  <div>
+   <div class="badge"><i class="pulse"></i> Trading Learning Community</div>
+   <h1>Trading ko <em>samjho.</em><br>Discipline se seekho.</h1>
+   <p class="heroText">Market ko sirf dekhna nahi — price action, chart reading aur trading concepts ko simple Hindi mein samajhna seekhiye.</p>
+   <div class="tags">
+    <span class="tag">✓ Market Analysis</span><span class="tag">✓ Chart Learning</span><span class="tag">✓ Trading Basics</span>
+   </div>
+   <button class="cta leadBtn"><span class="tg">➤</span> Telegram Community Join Karein</button>
+   <div class="note">Educational content • No guaranteed returns</div>
+  </div>
+
+  <div class="profile">
+   <div class="profileTop">
+    <img class="avatar" src="profile.jpeg" alt="Sunil Trader Profile">
+    <div><div class="name">Sunil Trader <span class="verified">✓</span></div>
+    <div class="role">Trading Educator • Market Learning</div></div>
+   </div>
+   <div class="chart">
+    <label>MARKET STUDY • PRICE ACTION</label>
+    <svg viewBox="0 0 500 200" preserveAspectRatio="none">
+     <polyline points="0,164 35,157 68,164 101,130 132,141 168,110 202,119 235,83 268,98 303,66 340,77 374,48 409,60 448,29 500,39"
+      fill="none" stroke="#16834a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+     <polyline points="0,178 80,174 160,171 240,168 320,164 400,161 500,157"
+      fill="none" stroke="#cfe4d5" stroke-width="2" stroke-dasharray="6 7"/>
+    </svg>
+   </div>
+   <div class="stats">
+    <div><b>Learn</b><span>Step by step</span></div>
+    <div><b>Analyze</b><span>Market focused</span></div>
+    <div><b>Improve</b><span>With discipline</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="wrap">
+  <div class="head"><h2>Yahan kya seekhenge?</h2><p>Simple language mein practical trading education aur market-learning concepts.</p></div>
+  <div class="grid">
+   <article class="card"><div class="icon">↗</div><h3>Market Analysis</h3><p>Price movement aur market structure ko samajhne ke important concepts explore karein.</p></article>
+   <article class="card"><div class="icon">⌁</div><h3>Chart Reading</h3><p>Charts, price action aur technical concepts ko step-by-step study karein.</p></article>
+   <article class="card"><div class="icon">◈</div><h3>Trading Discipline</h3><p>Planning, patience aur risk awareness jaise important learning principles par focus karein.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="wrap">
+  <div class="head"><h2>Learning ka simple process</h2><p>Zero se start karke concepts ko systematically samajhne ka approach.</p></div>
+  <div class="steps">
+   <div class="step"><div class="num">01</div><div><h3>Concept Samjho</h3><p>Trading aur market ke basics ko easy Hindi mein explore karein.</p></div></div>
+   <div class="step"><div class="num">02</div><div><h3>Charts Study Karo</h3><p>Price movement aur setups ko educational perspective se dekhein.</p></div></div>
+   <div class="step"><div class="num">03</div><div><h3>Consistent Raho</h3><p>Regular learning aur disciplined approach develop karein.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="wrap">
+  <div class="join">
+   <h2>Learning journey start karein.</h2>
+   <p>Sunil Trader ki Telegram community mein educational updates aur market-learning content ke saath connected rahein.</p>
+   <button class="cta leadBtn"><span class="tg">➤</span> Join Telegram Community</button>
+  </div>
+  <div class="disclaimer"><b>Disclaimer:</b> Yeh page sirf educational aur informational purpose ke liye hai. Isse financial ya investment advice na samjhein. Markets mein risk hota hai; koi guaranteed return claim nahi kiya gaya hai.</div>
+ </div>
+</section>
+</main>
+
+<div class="sticky"><button class="cta leadBtn"><span class="tg">➤</span> Telegram Par Join Karein</button></div>
+<footer>© 2026 Sunil Trader • Trading Education</footer>
+
+<script>
+const TELEGRAM_URL="https://t.me/+c14Nqfq5dKk5MTg1";
+const MIN_TIME=1500;
+const pageStart=Date.now();
+let interacted=false, leadSent=false, lastClick=0;
+
+["scroll","touchstart","pointerdown","keydown"].forEach(e=>{
+ window.addEventListener(e,()=>{interacted=true},{once:true,passive:true});
+});
+
+document.querySelectorAll(".leadBtn,.tgLink").forEach(el=>{
+ el.addEventListener("click",e=>{
+  const now=Date.now();
+  if(now-lastClick<2500){e.preventDefault();return}
+  lastClick=now;
+
+  const engaged=(now-pageStart>=MIN_TIME)&&interacted&&document.visibilityState==="visible";
+
+  if(engaged&&!leadSent&&typeof fbq==="function"){
+   leadSent=true;
+   fbq("track","Lead",{
+    content_name:"Sunil Trader Telegram",
+    content_category:"Trading Education"
+   });
+  }
+
+  e.preventDefault();
+  const btn=el.classList.contains("leadBtn")?el:null;
+  if(btn){
+   btn.dataset.old=btn.innerHTML;
+   btn.innerHTML='<span class="tg">✓</span> Opening Telegram...';
+   btn.disabled=true;
+  }
+  setTimeout(()=>{window.location.href=TELEGRAM_URL},250);
+ });
+});
+</script>
+</body>
+</html>
